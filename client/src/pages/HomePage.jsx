@@ -82,16 +82,16 @@ const HomePage = () => {
             <p className=' text-[#414141] opacity-50 text-lg md:text-xl'>Login to use our service</p>
             {
                 !isLogin&&
-                <div className=' w-[80%] md:w-[70%] h-[10%] bg-main-gray rounded-full flex items-center justify-between space-x-4 px-4'>
+                <div className=' w-[80%] md:w-[70%] py-4 bg-main-gray rounded-full flex items-center justify-between space-x-4 px-4'>
                 <PersonOutlinedIcon style={{color:'#352F44',fontSize:30}}/>
                 <input placeholder='Full Name' type="text" className=' text-lg font-medium bg-transparent outline-none flex-1' />
             </div>}
-            <div className='  w-[80%] md:w-[70%] h-[10%] bg-main-gray rounded-full flex items-center justify-between space-x-4 px-4'>
+            <div className='  w-[80%] md:w-[70%] py-4 bg-main-gray rounded-full flex items-center justify-between space-x-4 px-4'>
                 <MailOutlineOutlinedIcon style={{color:'#352F44',fontSize:30}}/>
                 <input placeholder='Email' type="email" className=' text-lg font-medium bg-transparent outline-none flex-1' />
 
             </div>
-            <div className='  w-[80%] md:w-[70%] h-[10%] bg-main-gray rounded-full flex items-center justify-between space-x-4 px-4'>
+            <div className='  w-[80%] md:w-[70%] py-4 bg-main-gray rounded-full flex items-center justify-between space-x-4 px-4'>
                 <LockOutlinedIcon style={{color:'#352F44',fontSize:30}}/>
                 <input placeholder='Password' type="password" className=' text-lg font-medium bg-transparent outline-none flex-1' />
             </div>
@@ -107,7 +107,7 @@ const HomePage = () => {
                     </div>
                 }
             </div>
-            <button className=' w-1/2 md:w-[33%] mb-2 h-16 bg-dark-purple rounded-full text-white font-bold md:text-xl'>
+            <button className=' w-1/2 md:w-[33%] mb-2 h-12 md:h-16 bg-dark-purple rounded-full text-white font-bold md:text-xl'>
                 <p>{isLogin?'Sign in':'Sign up'}</p>
             </button>
             <div className='flex justify-center items-center mb-4 space-x-4 text-[#696969] text-sm'>
