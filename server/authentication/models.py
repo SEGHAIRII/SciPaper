@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from baseApp.models import paper
+from papers.models import paper
 # Create your models here.
 
 class BasicUser(models.Model):

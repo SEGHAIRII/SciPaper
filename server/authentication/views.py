@@ -1,7 +1,7 @@
 
 from django.http import HttpResponse, HttpResponseForbidden, HttpResponseNotFound
 from .models import BasicUser, moderator, admin
-from baseApp.models import paper
+from papers.models import paper
 from django.contrib.auth.models import User, Group
 from django.contrib.auth import authenticate, login as djlogin, logout as djlogout
 from operator import itemgetter

@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "baseApp.apps.BaseappConfig",
+    "papers.apps.papersConfig",
     "authentication.apps.AuthenticationConfig",
     'django_elasticsearch_dsl'
 ]
@@ -79,7 +79,7 @@ WSGI_APPLICATION = "server.wsgi.application"
 DATABASES = {
       'default': {
           'ENGINE': 'django.db.backends.postgresql',
-          'NAME': 'sp',
+          'NAME': 'scipy',
           'USER': 'raouf',
           'PASSWORD': '123456r',
           'HOST': 'localhost',
