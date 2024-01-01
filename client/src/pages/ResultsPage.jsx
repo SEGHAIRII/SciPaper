@@ -60,7 +60,7 @@ const ResultsPage = () => {
         </h2>
         <div className='flex flex-row-reverse md:text-base text-sm items-end space-x-2'>
           <TagRoundedIcon/>
-          <div className=' opacity-70 whitespace-nowrap text-ellipsis'>
+          <div className='overflow-hidden opacity-70 whitespace-nowrap'>
             {
               keywords?.map((k,index)=>(
                 `${k}${index==keywords.length-1?'':', '}` 
@@ -70,7 +70,7 @@ const ResultsPage = () => {
         </div>
         <div className='flex flex-row-reverse md:text-base text-sm items-end space-x-2'>
           <PersonRoundedIcon/>
-          <div className=' opacity-70 whitespace-nowrap'> 
+          <div className='overflow-hidden opacity-70 whitespace-nowrap'> 
             {
               authors.map((k,index)=>(
                 `${k}${index==authors.length-1?'':', '}` 
@@ -80,7 +80,7 @@ const ResultsPage = () => {
         </div>
         <div className='flex flex-row-reverse md:text-base text-sm items-end space-x-2'>
           <BusinessRoundedIcon/>
-          <div className=' opacity-70 whitespace-nowrap'>
+          <div className='overflow-hidden opacity-70 whitespace-nowrap'>
             {
               institutions.map((k,index)=>(
                 `${k}${index==institutions.length-1?'':', '}` 
@@ -90,7 +90,7 @@ const ResultsPage = () => {
         </div>
         <div className='flex flex-row-reverse md:text-base text-sm items-end space-x-2'>
           <CalendarMonthRoundedIcon/>
-          <div className=' opacity-70 whitespace-nowrap'>
+          <div className='overflow-hidden opacity-70 whitespace-nowrap'>
             {date}
           </div>
         </div>
@@ -192,7 +192,7 @@ const ResultsPage = () => {
           </AnimatePresence>
         </motion.div>
         
-        <motion.div className='col-span-3 px-2 md:pl-8 pt-8 md:pt-24 w-full h-screen flex flex-col'>
+        <motion.div initial={{y:200}} animate={{y:0}} exit={{y:200}} className='col-span-3 px-2 md:pl-8 pt-8 md:pt-24 w-full h-screen flex flex-col'>
           <div className=' w-[90%] md:w-[60%] rounded-full flex items-center justify-between bg-main-gray space-x-4 px-4 md:px-8'>
             <input required  name='search' value={search} onChange={(e)=>setSearch(e.target.value)} placeholder='Search' type="text" className=' md:text-lg text-base py-3 md:py-4 font-medium bg-transparent outline-none flex-1' />
             <SearchIcon style={{color:'#352F44',fontSize:30}}/>

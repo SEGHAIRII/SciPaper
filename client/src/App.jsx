@@ -6,6 +6,7 @@ import SearchPage from './pages/SearchPage'
 import ResultsPage from './pages/ResultsPage'
 import { useSelector } from 'react-redux';
 import ArticlePage from './pages/ArticlePage'
+import ProfilePage from './pages/ProfilePage';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route index element={user?<SearchPage/>:<HomePage/>}></Route>
           <Route path='/search' element={<ResultsPage/>}></Route>
           <Route path='article/:id' element={<ArticlePage/>}></Route>
+          <Route path='profile' element={<ProfilePage/>}></Route>
         </Routes>
       </BrowserRouter>
     </>

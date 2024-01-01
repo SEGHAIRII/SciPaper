@@ -68,7 +68,7 @@ const Navbar = ({search,setSearch}) => {
             <FavoriteIcon style={{fontSize:32}}/>
             </motion.div>
             </Link>
-            <Link>
+            <Link to='/profile'>
               <motion.h4 className='hover:text-main-pink md:text-base underline text-white font-semibold duration-300'>{user.fullname}</motion.h4>
             </Link>
             <button onClick={(e)=>handleSignOut(e,dispatch)} className={`bg-transparent text-white font-semibold outline outline-2 hover:outline-main-pink hover:text-main-pink outline-white px-4 py-2 rounded-full duration-300`}>

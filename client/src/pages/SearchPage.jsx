@@ -35,7 +35,7 @@ const SearchPage = () => {
                 <FavoriteIcon style={{fontSize:32}}/>
               </motion.div>
               </Link>
-              <Link>
+              <Link to='/profile'>
                 <motion.h4 className='hover:text-main-pink underline text-white font-semibold duration-300'>{user.fullname}</motion.h4>
               </Link>
               <Link onClick={(e)=>handleSignOut(e,dispatch)} className={`bg-transparent text-white font-semibold outline outline-2 hover:outline-main-pink hover:text-main-pink outline-white px-4 py-2 rounded-full duration-300`}>
@@ -47,7 +47,7 @@ const SearchPage = () => {
           </nav>
           <form onSubmit={handleSearch} className='md:w-[70%] w-[85%] md:space-x-8 z-10 flex-1 flex md:flex-row flex-col items-center justify-center space-y-4 md:space-y-0 md:justify-between'>
             <div className=' md:flex-1 w-full md:w-auto bg-white rounded-full flex items-center justify-between space-x-4 px-4 md:px-8'>
-                <input required  name='search' value={search} onChange={(e)=>setSearch(e.target.value)} placeholder='Search' type="text" className=' text-lg py-3 md:py-4 font-medium bg-transparent outline-none flex-1' />
+                <input pattern=".*\S+.*" required  name='search' value={search} onChange={(e)=>setSearch(e.target.value)} placeholder='Search' type="text" className=' text-lg py-3 md:py-4 font-medium bg-transparent outline-none flex-1' />
                 <SearchIcon style={{color:'#352F44',fontSize:30}}/>
             </div>
               <motion.button type='submit' initial={{scale:1}} whileHover={{scale:1.01}} whileTap={{scale:0.95}} className=' bg-white font-bold text-sm md:text-base rounded-full py-3 md:py-4 text-dark-purple hover:text-light-purple hover:bg-main-pink uppercase px-8 flex items-center justify-center duration-300'>
