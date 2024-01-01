@@ -77,16 +77,15 @@ WSGI_APPLICATION = "server.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-      'default': {
-          'ENGINE': 'django.db.backends.postgresql',
-          'NAME': 'scipy',
-          'USER': 'raouf',
-          'PASSWORD': '123456r',
-          'HOST': 'localhost',
-          'PORT': '5432',
-      }
-  }
-
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'defaultdb',
+        'USER': 'avnadmin',
+        'PASSWORD': 'AVNS_-6PJX7J_9UniPAjyxeG',
+        'HOST': 'pg-2d6d4281-esi-25c0.a.aivencloud.com',
+        'PORT': '11717',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
