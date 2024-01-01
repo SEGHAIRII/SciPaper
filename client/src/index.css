@@ -1,6 +1,12 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-lists/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-calendars/styles/material.css";
 
 @font-face {
     font-family: 'Br Hendrix';
@@ -57,3 +63,25 @@ body{
         transform: rotate(360deg);
     }
     } 
+
+    .list{
+        direction: rtl;
+    }
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
+      
+      /* Styling the scrollbar handle or thumb */
+      ::-webkit-scrollbar-thumb {
+        background-color: #352F44; /* Color of the thumb */
+        border-radius: 4px; /* Rounded corners */
+      }
+      
+      /* Styling the scrollbar track (background) */
+      ::-webkit-scrollbar-track {
+        background-color: #EDF5F3; /* Color of the track */
+      }
+      
+      /* Styling the scrollbar's buttons (arrows) */
+     
